@@ -1,68 +1,41 @@
-<div align="center">
+# Visualizador de recorridos BFS y DFS en grafos
 
-# 🧮 Discrete Mathematics & Finite Automata Graph Visualizer (MC2)
+Aplicación gráfica Python para crear vértices/aristas y visualizar búsquedas en anchura y profundidad. Usa NetworkX para los recorridos y Matplotlib integrado en Tkinter para dibujar el grafo.
 
-**Herramienta de simulación de autómatas finitos deterministas y cálculo de tablas de verdad en Matemática para Computación 2.**
+## Requisitos
 
-[![Language](https://img.shields.io/badge/Language-HTML,%20JavaScript-blue?style=for-the-badge)](https://github.com/Ennero/Proyecto1_MC2)
-[![Course](https://img.shields.io/badge/Course-Matemática%20para%20Computación%202-003366?style=for-the-badge)](https://ingenieria.usac.edu.gt/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+Python 3 con Tkinter y dependencias de requirements.txt. Requiere una sesión gráfica.
 
-</div>
+## Ejecución
 
----
+Los comandos parten de la raíz del repositorio, salvo donde se indica otra terminal.
 
-
-## 📌 Descripción General
-
-Este repositorio contiene la implementación y entrega de **🧮 Discrete Mathematics & Finite Automata Graph Visualizer (MC2)**, desarrollado en el curso de **Matemática para Computación 2** en la Universidad de San Carlos de Guatemala.
-
-- **Objetivo:** Herramienta de simulación de autómatas finitos deterministas y cálculo de tablas de verdad en Matemática para Computación 2.
-- **Stack Principal:** `HTML, JavaScript`.
-- **Área:** Ciencias de la Computación, Algoritmos y Desarrollo de Software.
-
----
-
-## 🚀 Características y Componentes
-
-- Implementación modular y buenas prácticas de codificación.
-- Manejo estructurado de datos, control de flujo y validaciones.
-- Documentación y scripts de soporte para compilación o ejecución.
-
----
-
-## 📦 Estructura del Proyecto
-
-```
-Proyecto1_MC2/
-├── src/ o archivos de código fuente
-├── docs/ (si aplica)
-├── .gitignore
-├── LICENSE
-└── README.md
+```bash
+python -m pip install -r requirements.txt
+python Metodos_de_busqueda.py
 ```
 
----
+## Recorrido de demostración
 
-## ⚙️ Requisitos y Ejecución
+Crear varios vértices, agregar aristas y seleccionar un vértice existente como origen. Ejecutar BFS o DFS y observar cómo se resalta el recorrido. El grafo es no dirigido (nx.Graph).
 
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/Ennero/Proyecto1_MC2.git
-   cd Proyecto1_MC2
-   ```
-2. Ejecutar según el entorno (`HTML, JavaScript`):
-   - Consultar los scripts o archivos principales del proyecto para parámetros específicos.
+## Organización
 
----
+Carpetas de la entrega: [`images/`](images/).
 
-## 📄 Licencia
+## Documentación
 
-Este proyecto está bajo la Licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+- [Manual Tecnico](Manual%20Tecnico.md)
+- [Manual de usuario](Manual%20de%20usuario.md)
 
----
+## Alcance y límites
 
-## 👨‍💻 Autor
+No usa Graphviz ni implementa un motor de autómatas. Los datos están en memoria; elegir un origen inexistente no representa un caso válido para el recorrido.
 
-- **Enner Mendizabal** - [@Ennero](https://github.com/Ennero)  
-- *Facultad de Ingeniería, Universidad de San Carlos de Guatemala.*
+La documentación anterior a la actualización se conserva en [README-anterior.md](README-anterior.md) como referencia histórica; para iniciar el proyecto, seguir esta guía.
+
+## Contexto y licencia
+
+Trabajo académico o de aprendizaje conservado en el portafolio de [Enner Mendizabal](https://github.com/Ennero). Los créditos de los trabajos en grupo se conservan en sus entregas y manuales.
+
+Consultar [LICENSE](LICENSE) para la licencia de la raíz. Las dependencias y los componentes con avisos o licencias propios conservan sus condiciones.
